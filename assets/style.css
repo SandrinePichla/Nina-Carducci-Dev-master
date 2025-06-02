@@ -89,10 +89,11 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-
+/* Problème retrouvé par le terminal*/
 #gallery {
 	/*	min-height: 100vh; */
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
