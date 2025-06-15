@@ -1,3 +1,5 @@
+//C’est une IIFE (Immediately Invoked Function Expression) utilisée pour encapsuler le code dans une fonction et éviter les conflits de variables. On passe jQuery comme $ à l'intérieur.
+
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
@@ -153,9 +155,10 @@
           index = i ;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      //next = // idem que pour next => 
+        //imagesCollection[index] ||
+       // imagesCollection[imagesCollection.length - 1];
+        next = imagesCollection[(index - 1 + imagesCollection.length) % imagesCollection.length];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -192,7 +195,8 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      // next = imagesCollection[index] || imagesCollection[0]; La fct ne passe pas à l'image suivante => réaffiche la même image
+      next = imagesCollection[(index + 1) % imagesCollection.length]; // revenir au début si on est à la fin (% = modulo).
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
