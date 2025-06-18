@@ -20,7 +20,32 @@
 		<!--7.Ajout "defer" sur scripts sauf le 1er-->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="./assets/maugallery.js" defer></script>
-		<script src="./assets/scripts.js" defer></script>		
+		<script src="./assets/scripts.js" defer></script>
+		
+		<!--1.	Schema.org => affichage de rich snippets-->
+		<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Nina Carducci",
+           "image": "./assets/images/optimisees/nina.webp",
+          "url": "https://sandrinepichla.github.io/Nina-Carducci-Dev-master/", 
+          "priceRange": "50€ - 400€",
+          "sameAs": [           
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr"               
+            ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200",
+            "addressCountry": "FR"
+          },
+          "telephone": "05 56 67 78 89",
+          "openingHours": "Mo-Fr 10:00-19:00"
+        }
+        </script>
+
 	</head>
 	<body>
 		<div class="top-header">
