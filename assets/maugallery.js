@@ -156,9 +156,7 @@
         }
       });
       //prevImage = idem que pour next =>
-        //imagesCollection[index] ||
-       // imagesCollection[imagesCollection.length - 1];
-       // revenir au début si on est à la fin (% = modulo).
+      // revenir au début si on est à la fin (% = modulo).
         next = imagesCollection[(index - 1 + imagesCollection.length) % imagesCollection.length];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -196,7 +194,7 @@
           index = i;
         }
       });
-      // next = imagesCollection[index] || imagesCollection[0]; La fct ne passe pas à l'image suivante il manque +1 => réaffiche la même image
+      // La fct ne passe pas à l'image suivante il manque +1 => réaffiche la même image
       next = imagesCollection[(index + 1) % imagesCollection.length]; // revenir au début si on est à la fin (% = modulo).
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -244,8 +242,12 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+
+      //J'enlève les classes "active" et "active-tag" de tous les boutons filtres
+      $(".tags-bar .nav-link").removeClass("active active-tag");
+
+      // J'ajoute les classes "active" et "active-tag" au bouton cliqué      
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
