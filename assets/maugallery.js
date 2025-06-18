@@ -238,6 +238,7 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
+    // Modification des boutons filtres => tous dorés
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
         return;
