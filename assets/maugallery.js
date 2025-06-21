@@ -1,5 +1,3 @@
-//C’est une IIFE (Immediately Invoked Function Expression) utilisée pour encapsuler le code dans une fonction et éviter les conflits de variables. On passe jQuery comme $ à l'intérieur.
-
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);

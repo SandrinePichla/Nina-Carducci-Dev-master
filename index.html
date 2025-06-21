@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!--2.ajout language-->
+<!-- language-->
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		<!--Rajout de la balise meta description pour SEO-->
+		<!--Balise meta description pour SEO-->
 		<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Shooting entreprises, mariages, portraits, concerts, retouches et albums personnalisés. Déplacements en  Île-de-France possibles">			
-		<!-- 1.ajout balise title -->   
+		<!-- Balise title -->   
     	<title>Nina Carducci - photographe </title>
 
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
@@ -17,15 +17,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">	
 
 		<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-		<!--7.Ajout "defer" sur scripts sauf le 1er-->
+		<!--Differer les scripts-->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="./assets/maugallery.js" defer></script>
 		<script src="./assets/scripts.js" defer></script>
 		
-		<!--1.	Schema.org => affichage de rich snippets pour Google-->
+		<!--Schema.org => affichage de rich snippets pour Google-->
 		<script type="application/ld+json">
         {
-          "@context": "http://schema.org",
+          "@context": "https://schema.org",
           "@type": "ProfessionalService",
           "name": "Nina Carducci",
            "image": "https://sandrinepichla.github.io/Nina-Carducci-Dev-master/assets/images/nina.webp",
@@ -46,7 +46,7 @@
         }
         </script>
 
-		<!--  Meta pour Facebook, LinkedIn => Balises Open Graph -->
+		<!--  Balises Open Graph => Meta pour Facebook, LinkedIn -->
 		<meta property="og:title" content="Nina Carducci - Photographe professionnelle">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://sandrinepichla.github.io/Nina-Carducci-Dev-master/">
@@ -60,8 +60,6 @@
 		<meta name="twitter:description" content="Photographe professionnelle à Bordeaux, je me déplace en Île-de-France. Appelez-moi pour vos shooting entreprises, mariages, portraits, concerts, retouches ou albums personnalisés.">
 		<meta name="twitter:image" content="https://sandrinepichla.github.io/Nina-Carducci-Dev-master/assets/images/nina.webp">
 		<meta name="twitter:site" content="@nina-carducci">
-		
-
 	</head>
 	<body>
 		<header class="top-header">			
@@ -72,10 +70,7 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<!-- 2.Ajout dans balises img alt"XXX"-->
-					 <!--4.Supprimer \ à la fin des balises img-->
-					 <!-- 5. Resize et webp des images-->
-					 <!--6.Loading = lazy sur img hors LCP -->
+					
 					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram Nina Carducci"></a></li>
 				</ul>			
 			</nav>		
@@ -90,6 +85,7 @@
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					</div>
 					<div class="carousel-inner">
+						<!-- Carousel -->
 						<div class="carousel-item active">
 							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Vue d'un homme en costume qui traverse un passage piétons">
 						</div>
@@ -103,11 +99,11 @@
 					<!--FLECHES ET TEXTE PREVIOUS ET NEXT-->
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden" style="color: rgb(0, 0, 0);">Previous</span>
+						<span class="visually-hidden">Previous</span>
 					</button>
 					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden" style="color: rgb(0, 0, 0);">Next</span>
+						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
 			</section >
@@ -126,6 +122,7 @@
 				<h3 class="title">Portfolio</h3>
 				<div class="container py-3">
 					<div class="gallery" style="display: none">
+						<!-- GALERIE-->
 						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" loading="lazy" alt="Vue d'une foule dans une salle de concert">
 						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" loading="lazy" alt="Portrait d'un homme d'affaire bras croisés"  >
 						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" loading="lazy" alt="Photo d'une jeune femme sur son lieu de travail qui sourit"  >
@@ -196,6 +193,7 @@
 				<div class="form-container">
 					<h2>Une question ? Une demande de devis ?</h2>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+					<!-- FORMULAIRE-->
 					<form action="#" method="post">
 						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom">

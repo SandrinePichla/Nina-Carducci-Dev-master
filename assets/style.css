@@ -92,10 +92,10 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-/* Problème retrouvé par le terminal
-#gallery {
-		min-height: 100vh; 
-}*/
+
+.visually-hidden {
+	color: #000;
+}
 
 .title{
 	text-align: center;
