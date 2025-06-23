@@ -50,7 +50,7 @@
 		<meta property="og:title" content="Nina Carducci - Photographe professionnelle">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://sandrinepichla.github.io/Nina-Carducci-Dev-master/">
-		<meta property="og:image" content="https://sandrinepichla.github.io/Nina-Carducci-Dev-master/assets/images/nina.webp">
+		<meta property="og:image" content="https://sandrinepichla.github.io/Nina-Carducci-Dev-master/assets/images/nina.webp" >
 		<meta property="og:description" content="Photographe professionnelle à Bordeaux, je me déplace en Île-de-France. Appelez-moi pour vos shooting entreprises, mariages, portraits, concerts, retouches ou albums personnalisés.">
 		<meta property="og:locale" content="fr_FR">
 
@@ -87,12 +87,32 @@
 					<div class="carousel-inner">
 						<!-- Carousel -->
 						<div class="carousel-item active">
-							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Vue d'un homme en costume qui traverse un passage piétons">
+							<!--balise picture -->
+							<picture>
+								<!-- Version WebP pour navigateurs compatibles -->
+								<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.mobile.webp" type="image/webp" media="(max-width: 650px)">
+								<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" type="image/webp" >
+								<!-- Version JPEG en fallback -->
+								<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" type="image/jpeg">
+								<!-- Fallback HTML -->
+								<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="Vue d'un homme en costume qui traverse un passage piétons" loading="lazy" decoding="async">
+							</picture>
 						</div>
 						<div class="carousel-item">
-							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" loading="lazy" alt="Foule de jeunes gens à un concert">
+							<picture>
+								<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.mobile.webp" type="image/webp" media="(max-width: 650px)">
+								<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" type="image/webp" >
+								<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" type="image/jpeg">
+								<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" loading="lazy" alt="Foule de jeunes gens à un concert" decoding="async">
+							</picture>							
 						</div>
 						<div class="carousel-item">
+							<picture>
+								<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.mobile.webp" type="image/webp" media="(max-width: 650px)">
+								<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" type="image/webp">
+								<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" type="image/jpeg">
+								<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" loading="lazy" alt="Portrait d'un couple de mariés qui s'embrassent en dansant" decoding="async">
+							</picture>
 							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" loading="lazy" alt="Portrait d'un couple de mariés qui s'embrassent en dansant">
 						</div>
 					</div>
