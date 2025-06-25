@@ -118,7 +118,7 @@ body {
 }
 .item-column {
 	position: relative;
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 	padding: 0;
 }
 .item-column::after{
@@ -137,7 +137,7 @@ body {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 00%;
+	border-radius: 0;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -152,13 +152,19 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
 }
-.quote__author {
-	font-family: Spectral;
+
+#under-service.quote__text {
+  font-size: 2rem;
+}
+
+#under-gallery.quote__text {
+  font-size: 1.75rem;
+}
+
+.quote__author {	
 	font-weight: 800;
 	font-size: 22px;
 }
