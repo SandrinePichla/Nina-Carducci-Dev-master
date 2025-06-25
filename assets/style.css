@@ -44,6 +44,10 @@ body {
 
 /* CAROUSSEL contraste   */
 
+.carousel-item img {
+  height: auto;
+}
+
 
 #about {
 	display: flex;
