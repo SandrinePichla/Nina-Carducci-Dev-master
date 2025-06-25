@@ -61,18 +61,18 @@ body {
 	content: ' ';
 	background-color: #E5975F;
 	width: 374px;
-	height: 329px;
+	height: 373px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index: -1;
 }
 
-.picture {
+/*.picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
-}
+}*/
 
 .picture img {
 	width: 100%;
