@@ -260,18 +260,15 @@ input[type="submit"] {
 /************ MEDIA QUERYS **************/
 @media (min-width: 1180px) {
    
-	#under-gallery.quote__text {
+	#under-gallery.quote__text,
+	#under-service.quote__text {
     	font-size: 2.5rem;
 		line-height: 1.2
 	} 
 
-	#under-service.quote__text {
-   		font-size: 2.5rem;
-		line-height: 1.2
-	} 
-
+	
 	h2.questions {
-	font-size: 1.75rem;
+		font-size: 1.75rem;
 	}
 
    	h3.about-me__introduction {
@@ -295,30 +292,24 @@ input[type="submit"] {
 		width: 100%;
 	} 
 	.about-me__introduction {
-	font-size: 1rem;
-}
+		font-size: 1rem;
+	}
 
-#under-gallery.quote__text  {
-    font-size: calc(1.375rem + 1.5vw);
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-#under-service.quote__text {
-    font-size: calc(1.375rem + 1.5vw);
-	margin-top: 0;
-    margin-bottom: 0.5rem;    
-    line-height: 1.2;
-}
-
-.questions {
-	font-size: calc(1.3rem + 0.6vw);
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
+	#under-gallery.quote__text,
+	#under-service.quote__text  {
+		font-size: calc(1.375rem + 1.5vw);
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+		line-height: 1.2;
+	}
+	
+	.questions {
+		font-size: calc(1.3rem + 0.6vw);
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+		line-height: 1.2;
+	}
 }
 
 @media all and (max-width: 1000px) {
